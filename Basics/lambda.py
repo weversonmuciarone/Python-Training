@@ -23,7 +23,7 @@
 # Map Functions
 #     Muito utilizado com listas
 #     Aplicar uma funcao a um iterabe por item. (list, tuple, dic, etc..)
-
+'''
 lista1 = [1, 2, 3, 4]
 #
 # def multi(x):
@@ -33,3 +33,11 @@ lista1 = [1, 2, 3, 4]
 # print(list(lista2))
 
 print(list(map(lambda x: x * 2, lista1)))
+'''
+
+num = int(input('Digite um numero inteiro: '))
+
+cubo = lambda x: x ** 3
+
+print(f'O cubo de {num} e {cubo(num)}')
+

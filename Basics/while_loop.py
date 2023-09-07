@@ -27,3 +27,15 @@
 #     print(value)
 #     break
 
+try:
+    num = int(input('Digite um numero inteiro: '))
+    count = 1
+    res = 1
+    print('------------------------------')
+except ValueError:
+    print('Favor digitar um numero inteiro!')
+else:
+    while count <= num:
+        res *= count
+        count += 1
+    print(f'O fatorial de {num} e {res}')

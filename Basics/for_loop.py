@@ -56,7 +56,7 @@ for n in range(1, 11):
     if n != 5:
         print(n)
 '''
-
+'''
 numeros = range(1, 11)
 
 for numero in numeros:
@@ -64,3 +64,17 @@ for numero in numeros:
         print(f' O Numero {numero} e par.\n', end='')
     else:
         print(f' O numero {numero} e impar.')
+    
+'''
+
+try:
+    num = int(input('Digite um numero para calcular o fatorial: '))
+except ValueError:
+    print('Favor digitar um numero inteiro!')
+else:
+    print('---------------------------------------------------')
+
+    res = 1
+    for n in range(1, num + 1):
+        res *= n
+    print(f'O fatorial de {num} e {res}')

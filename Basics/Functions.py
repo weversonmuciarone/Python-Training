@@ -49,14 +49,13 @@ else:
         print(f'A soma de {num1} + {num2} e igual a {result}')
     somar(num1, num2)
 '''
-
+'''
 print('Encontrar a potencia de um numero')
 print('---------------------------------')
 
 base_usuario = int(input('Digite o valor da base: '))
 pot_usuario = input('Digite o vaalor da potencia: ')
 
-'''
 def potencia(base, pot=2):
     return base ** pot
 if pot_usuario:
@@ -64,3 +63,16 @@ if pot_usuario:
 else:
     print(f'A potencia de {base_usuario} e {potencia(base_usuario)}')
 '''
+
+try:
+    num = int(input('Digite um numero inteiro: '))
+except ValueError:
+    print('Favor digitar um numero inteiro.')
+else:
+    def dobro(numero):
+        return numero * 2
+    print(f' O dobro de {num} e {dobro(num)}')
+
+    def quadrado(quad):
+        return quad ** 2
+    print(f' A raiz quadrada de {dobro(num)} e {quadrado(dobro(num))}')
