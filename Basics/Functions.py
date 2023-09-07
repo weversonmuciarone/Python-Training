@@ -56,10 +56,11 @@ print('---------------------------------')
 base_usuario = int(input('Digite o valor da base: '))
 pot_usuario = input('Digite o vaalor da potencia: ')
 
-
+'''
 def potencia(base, pot=2):
     return base ** pot
 if pot_usuario:
     print(f'A potencia de {base_usuario} e {potencia(base_usuario, int(pot_usuario))}')
 else:
     print(f'A potencia de {base_usuario} e {potencia(base_usuario)}')
+'''
