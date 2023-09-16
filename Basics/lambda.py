@@ -34,10 +34,31 @@ lista1 = [1, 2, 3, 4]
 
 print(list(map(lambda x: x * 2, lista1)))
 '''
-
+'''
 num = int(input('Digite um numero inteiro: '))
 
 cubo = lambda x: x ** 3
 
 print(f'O cubo de {num} e {cubo(num)}')
+'''
+'''
+num1 = int(input('Digite o primeiro numero: '))
+num2 = int(input('Digite o segundo numero: '))
+
+multi = lambda x, y: x * y
+print(f'O resultado de {num1} * {num2} e igual a {multi(num1, num2)}')
+'''
+'''
+num1 = int(input('Digite um numero: '))
+
+res = lambda x: 'Par' if x % 2 == 0 else 'Impar'
+
+print(f'O numero {num1} que voce digitou e {res(num1)}')
+'''
+lista = range(1, 11)
+
+quadrado = list(map(lambda x: x ** 2, lista))
+print(quadrado)
+
+
 

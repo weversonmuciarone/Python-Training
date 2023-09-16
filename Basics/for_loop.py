@@ -66,7 +66,7 @@ for numero in numeros:
         print(f' O numero {numero} e impar.')
     
 '''
-
+'''
 try:
     num = int(input('Digite um numero para calcular o fatorial: '))
 except ValueError:
@@ -78,3 +78,11 @@ else:
     for n in range(1, num + 1):
         res *= n
     print(f'O fatorial de {num} e {res}')
+'''
+
+numeros = range(1, 11)
+quadrado = lambda x: x ** 2
+res = []
+for i in numeros:
+    res.append(quadrado(i))
+print(f'O quadrado dos numeros {numeros} e {res}')
